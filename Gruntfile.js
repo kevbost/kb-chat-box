@@ -37,14 +37,14 @@ module.exports = function (grunt) {
             files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
             tasks: ['newer:copy:styles', 'autoprefixer']
         }
-    }
+    };
 
     var watchTestConfig = {
       test: {
           files: ['test/spec/{,*/}*.{js,coffee}', '<%= yeoman.app %>/{,*/}*.{js,coffee}'],
           tasks: ['test']
       }
-    }
+    };
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -422,7 +422,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('watch:test', function() {
-        var config = extend(watchBaseConfig, watchTestConfig)
+        var config = extend(watchBaseConfig, watchTestConfig);
         grunt.config('watch', config);
         grunt.task.run('watch');
     });

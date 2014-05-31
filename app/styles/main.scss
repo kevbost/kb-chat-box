@@ -1,91 +1,160 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+/*==============*/
+/* JS DAY THREE */
+/*==============*/
 
-@import 'sass-bootstrap/lib/bootstrap';
+/*================*/
+/* jQuery Styling */
+/*================*/
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+* {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
-/* Space out content a bit */
+a {}
+
+/*============================================*/
+/* Main Styling */
+/*============================================*/
+
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    // background-color: #ECEBE9;
+    background-color: yellow;
+    height: 500px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+.head {
+    background-color: orange;
+    // background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 165px;
+    margin-bottom: 10px;
 }
 
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
+.title {
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+    top: 0px;
+    color: white;
+    font-size: 8em;
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+.underTitle {
+    margin: 0 auto;
+    position: absolute;
+    left: 10.65%;
+    top: 125px;
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: .405em;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+.container {
+    margin: 0 auto;
+    background-color: black;
+    max-width: 970px;
+    height: 100%;
+    margin-top: 10px;
+    overflow: scroll;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
+.main {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    max-width: 98%;
+    height: 480px;
+    background-color: black;
+    color: black;
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
+.foot {
+    display: block;
+    clear: both;
+    background-color: red;
+    width: 100%;
+    height: 165px;
+    margin-top: 10px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+/*============================================*/
+/* Message Box */
+/*============================================*/
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
+message-instance {}
 
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
+.message-instance {
+    height: 120px;
+    width: 100%;
+}
+
+.username {
+    float: left;
+    display: inline;
+    margin: 1% 0% 0% 1%;
+    width: 18%;
+    min-height: 100px;
+    background-color: green;
+}
+
+.message-text {
+    float: left;
+    display: inline;
+    margin: 1% 1% 0% 1%;
+    width: 59.7965%;
+    min-height: 100px;
+    background-color: green;
+}
+
+.timestamp {
+    float: left;
+    display: inline;
+    margin: 1% 1% 0% 0%;
+    width: 18%;
+    min-height: 100px;
+    background-color: green;
+}
+
+/*============================================*/
+/* Before & After Example */
+/*============================================*/
+
+.example {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    &:before {
+        position: absolute;
+        content: " ";
+        font-size: 40px;
+        width: 400px;
+        height: 400px;
+        border-radius: 400px;
+        background-color: red;
+        left: 200px;
     }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
+    &:after {
+        position: absolute;
+        content: " ";
+        font-size: 40px;
+        width: 360px;
+        height: 360px;
+        border-radius: 400px;
+        background-color: orange;
+        left: 222px;
+        top: 20px;
+        transition: all .5s ease;
+    }
+    &:hover:after {
+        top: 0px;
+        left: 175px;
+        border-radius: 0;
+        width: 400px;
+        height: 400px;
     }
 }
