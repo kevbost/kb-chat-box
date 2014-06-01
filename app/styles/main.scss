@@ -67,8 +67,8 @@ body {
     position: relative;
     top: 10px;
     max-width: 98%;
-    height: 480px;
-    background-color: black;
+    // height: 480px;
+    background-color: #1e1e1e;
     color: black;
 }
 
@@ -85,38 +85,53 @@ body {
 /* Message Box */
 /*============================================*/
 
-message-instance {}
-
 .message-instance {
-    height: 120px;
-    width: 100%;
+    min-height: 0px;
+    max-height: 500px;
+    width: 950px;
+    margin: 0;
+    padding: 0 0 50px 0;
 }
 
 .username {
-    float: left;
-    display: inline;
+    // float: left;
+    line-height: 13px;
+    display: inline-block;
     margin: 1% 0% 0% 1%;
     width: 18%;
-    min-height: 100px;
-    background-color: green;
+    // min-height: 30px;
+    // background-color: green;
+    color: #a6e22d;
 }
 
 .message-text {
-    float: left;
-    display: inline;
+    // float: left;
+        // line-height: 13px;
+    display: inline-block;
     margin: 1% 1% 0% 1%;
-    width: 59.7965%;
-    min-height: 100px;
-    background-color: green;
+    width: 59%;
+    max-height: 500px;
+    // max-width: 100px;
+    // height: 30px;
+    text-align: right;
+    overflow: scroll;
+    text-align: center;
+    // background-color: green;
+    color: #fff;
+    & img {
+    }
 }
 
 .timestamp {
-    float: left;
-    display: inline;
+    line-height: 13px;
+    // float: right;
+    display: inline-block;
     margin: 1% 1% 0% 0%;
     width: 18%;
-    min-height: 100px;
-    background-color: green;
+    color: #fd9720;
+    text-align: right;
+    // min-height: 30px;
+    // background-color: green;
 }
 
 /*============================================*/

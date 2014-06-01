@@ -1,64 +1,59 @@
 'use strict';
+
+var user = 'KB';
+
 // ///////////////////////////////////////////////
 // ///////////////////////////////////// Templates
 // ///////////////////////////////////////////////
-
 var chatBox = _.template($('.chatBoxTemplate').text());
+
 
 // ///////////////////////////////////////////////
 // ///////////////////////////////////// Fetch API
 // ///////////////////////////////////////////////
-
+var serverURL = 'http://tiny-pizza-server.herokuapp.com/collections/chat-messages';
 var json = $.getJSON('http://tiny-pizza-server.herokuapp.com/collections/chat-messages').done(function(chatApi) {
 	renderChat(chatApi);
 });
 
+
 // ///////////////////////////////////////////////
 // ///////////////////////////////Render functions
 // ///////////////////////////////////////////////
-
-// Repos
-// function renderChat(rendering) {
-// 	rendering.forEach(function(module) {
-// 		var rendered = chatBox(module);
-// 		$('.container').prepend(rendered);
-// 		// $('.participationGraph').css({'width':'100px','background-color':'orange'});
-// 	});
-// }
-
-function renderChat(data) {
-	data.forEach(function(info) {
+function renderChat(data){
+	data.forEach(function(info){
+		if(info.user && info.time && info.message) {
 		var rendered = chatBox(info);
-		$('.container').prepend(rendered);
-		// $('.participationGraph').css({'width':'100px','background-color':'orange'});
-	});
+		$('.main').prepend(rendered);
+	}});
 }
 
-$('.main').scrollTop(480)
-$('.textfield1').val('kevbost');
+function Message(user, message, time) {
+	this.user = user || 'KB';
+	this.message = message || 'Empty message?!';
+	this.time = time || 'Immediately.';
+	this.meta = 'very m374';
+}
 
-$('.button1').click(function() {
-	var user = $('.textfield1').val();
-	console.log('var user is ', user);
-	// $('#button1').remove();
-	// $('#textfield1').remove();
+function update(info) {
+		$.post('http://tiny-pizza-server.herokuapp.com/collections/chat-messages', info);
+}
+
+$('button').click(function(){
+	var message = $('.textfield2').val();
+	var time = Date.now();
+	var postMessage = new Message(user, message, time);
+	update(postMessage);
+	$.get('http://tiny-pizza-server.herokuapp.com/collections/chat-messages')
+	alert("success");
 });
 
-function ClearFields() {
-	$('.textfield1').val('');
-	$('.textfield2').val('');
-}
+// (function() {
+// 	setInterval(function() {
+// 		$.getJSON(serverURL).done(function(chatApi) {
+// 			renderChat(chatApi);
+// 		});
+// 	}, 3000);
+// })();
 
-function Chat() {
-	// this.name = user;
-}
-
-
-// items.forEach(function(item){
-//     // var totalString = firstPart + item.Images[0].url_570xN + lastPart
-//     // $('.main').append(totalString)
-//     var totalString = '<a href="' + item.url + '"style="background-image: url(' + item.Images[0].url_570xN + ') " target="_blank" class="box"></a>'
-//     $('.main').append(totalString)
-// })
-
-$('.main').append(chatBox);
+// $('.main').append(chatBox);
