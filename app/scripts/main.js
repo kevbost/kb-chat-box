@@ -3,7 +3,9 @@
 // sets user default
 var user = 'KB';
 // sets momentJS default
-var now = moment().calendar();
+var now = Date.now();
+// var now = moment().calendar();
+
 
 // ///////////////////////////////////////////////
 // ///////////////////////////////////// Templates
@@ -26,6 +28,7 @@ $.getJSON('http://tiny-pizza-server.herokuapp.com/collections/chat-messages').do
 // ///////////////////////////////Render functions
 // ///////////////////////////////////////////////
 function renderChat(data){
+	data = data.splice(0,25);
 	data.forEach(function(info){
 		if(info.user && info.time && info.message) {
 		var rendered = chatBox(info);
@@ -56,9 +59,15 @@ $('button').click(function(){
 	location.reload();
 });
 
+// 2:08 PM DATE
+// yeah, it's similar to setInterval, but instead of re-running it every X milliseconds, 
+// it waits that time instead and then runs it....note it's not a silver bullet though for 
+// getting things to happen at certain times. You'll have to remember that JS is 
+// asynchronous and will keep looking for shit to do. I.e. if you put a setTimeout 
+// into a for/forEach loop the loop will likely be completed before your set timeouts even start
 
 
-$( ".main" ).scrollTop( 300 )
+// $( ".main" ).scrollTop( 300 )
 
 
 // (function() {

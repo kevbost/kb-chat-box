@@ -23,7 +23,7 @@
 	<!--[if lt IE 10]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-	<div class="head"><p class="title">BOSTBOT</p> <p class="underTitle">LOCAL CHAT BOX APP</div>
+	<div class="head"><p class="title">BOSTCHAT</p> <p class="underTitle">LOCAL CHAT BOX APP</div>
 	
 <!-- 		<input class="textfield1">
 		</input>
@@ -31,11 +31,16 @@
 		<button class="button1" type="button" onclick="ClearFields();">Username</button> -->
 	
 		<div class="container">
+			  <div class="identity">
+			  	<form>
+						<input class="intro"><p>Username:</p></input>
+					</form>
+				</div>
 			<div class="main"></div>
 			<div id="scroll"></div>
 		</div>
 	
-		<form>
+		<form class ="inputForm">
 			<input class="textfield2"></input>
 			<button id="button" type="button">Submit</button>
 		</form>
@@ -49,7 +54,7 @@
 					<li class="message-text">
 							<%=message %>
 					</li>
-					<li class="timestamp"><%=time %></li>
+					<li class="timestamp"><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
 		</ul>
 	</script>
 	<!-- build:js scripts/vendor.js -->
