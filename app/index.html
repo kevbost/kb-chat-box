@@ -60,6 +60,10 @@
 						<li class="timestamp">Submitted on<br><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
 		</ul>
 	</script>
+
+<div style="display:none;visibility:hidden" id="uip"><%= Request.UserHostAddress %></div>
+
+
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower_components/jquery/jquery.js"></script>

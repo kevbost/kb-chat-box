@@ -1,6 +1,8 @@
 'use strict';
 
-var user = $('.input-username').val();
+var user = 'KB'
+$(".input-username").prop('disabled', true);
+
 
 // User Login
 $('.submit-username').click(function(){
@@ -37,8 +39,8 @@ function renderChat(data){
 
 // /////////////////////////////////////////// Message Constructor
 function Message(user, message, time) {
-	this.user = user || 'KB';
-	this.message = message || 'KB just submitted an empty message from his local chat client.';
+	this.user = user || 'gh-pages';
+	this.message = message || 'A random user just submitted an empty message from his local chat client.';
 	this.time = time || 'Immediately.';
 	this.meta = 'very m374';
 	this.appID = 'kevbost';
