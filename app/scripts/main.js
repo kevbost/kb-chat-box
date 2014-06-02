@@ -1,6 +1,6 @@
 'use strict';
 
-var user = 'KB'
+var user = 'KBs gh-pages'
 $(".input-username").prop('disabled', true);
 
 
@@ -39,7 +39,7 @@ function renderChat(data){
 
 // /////////////////////////////////////////// Message Constructor
 function Message(user, message, time) {
-	this.user = user || 'KB';
+	this.user = user || 'KBs gh-pages';
 	this.message = message || 'A random user just submitted an empty message from his local chat client.';
 	this.time = time || 'Immediately.';
 	this.meta = 'very m374';
