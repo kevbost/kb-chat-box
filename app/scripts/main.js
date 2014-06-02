@@ -39,7 +39,7 @@ function renderChat(data){
 
 // /////////////////////////////////////////// Message Constructor
 function Message(user, message, time) {
-	this.user = user || 'gh-pages';
+	this.user = user || 'KB';
 	this.message = message || 'A random user just submitted an empty message from his local chat client.';
 	this.time = time || 'Immediately.';
 	this.meta = 'very m374';
