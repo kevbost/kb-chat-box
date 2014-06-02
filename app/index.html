@@ -25,36 +25,41 @@
 	<![endif]-->
 	<div class="head"><p class="title">BOSTCHAT</p> <p class="underTitle">LOCAL CHAT BOX APP</div>
 	
-<!-- 		<input class="textfield1">
-		</input>
+	<!-- 		<input class="textfield1">
+	</input>
+	<button class="button1" type="button" onclick="ClearFields();">Username</button> -->
+	
+	<div class="container">
 
-		<button class="button1" type="button" onclick="ClearFields();">Username</button> -->
-	
-		<div class="container">
-			  <div class="identity">
-			  	<form>
-						<input class="intro"><p>Username:</p></input>
-					</form>
-				</div>
-			<div class="main"></div>
-			<div id="scroll"></div>
+		<div class="identity">
+			<form>
+				<input class="input-username" placeholder="USERNAME"></input>
+				<div class="submit-username">Submit</div>
+			</form>
 		</div>
-	
-		<form class ="inputForm">
-			<input class="textfield2"></input>
-			<button id="button" type="button">Submit</button>
-		</form>
-	
-		<div class="foot">
-			<!-- <div class="example">html text</div> -->
+
+		<div class="main">
+			<form class ="inputForm">
+				<textarea class="textfield2"></textarea>
+				<div class="submit-message">Submit</div>
+			</form>
 		</div>
+
+		<div id="scroll"></div>
+
+	</div>
+	
+	
+	<!-- 		<div class="foot">
+			<div class="example">html text</div>
+	</div> -->
 	<script type="text/template" class="chatBoxTemplate">
 		<ul class="message-instance">
-					<li class="username"><%=user %></li>
-					<li class="message-text">
-							<%=message %>
-					</li>
-					<li class="timestamp"><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
+						<li class="username"><%=user %></li>
+						<li class="message-text">
+									<%=message %>
+						</li>
+						<li class="timestamp"><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
 		</ul>
 	</script>
 	<!-- build:js scripts/vendor.js -->
