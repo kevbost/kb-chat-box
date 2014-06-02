@@ -19,12 +19,12 @@ a {}
 
 body {
     // background-color: #ECEBE9;
-    background-color: yellow;
+    background-color: rgba(61, 61, 61, 1);
     height: 500px;
 }
 
 .head {
-    background-color: orange;
+    background-color: #fff;
     // background-size: cover;
     background-position: center;
     width: 100%;
@@ -34,27 +34,29 @@ body {
 
 .title {
     margin: 0 auto;
-    position: absolute;
-    left: 10%;
+    position: relative;
+    text-align: left;
+    left: 0px;
     top: 0px;
-    color: white;
+    color: rgba(61, 61, 61, 1);
     font-size: 8em;
 }
 
 .underTitle {
     margin: 0 auto;
     position: absolute;
-    left: 10.65%;
+    left: 16px;
     top: 125px;
-    color: white;
+    color: rgba(61, 61, 61, 1);
     font-size: 2em;
     font-weight: 100;
-    letter-spacing: .556em;
+    letter-spacing: .54em;
 }
 
 .container {
+    border: 1px solid orange;
     margin: 0 auto;
-    background-color: black;
+    background-color: #1e1e1e;
     max-width: 970px;
     height: 100%;
     margin-top: 10px;
@@ -63,14 +65,16 @@ body {
 }
 
 .main {
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
+    border-top: 1px solid white;
     margin-bottom: 10px;
     position: relative;
     top: 10px;
     max-width: 98%;
     // max-height: 98%;
     background-color: #1e1e1e;
+    // background-color: #fff;
     color: black;
     display: none;
     &.activate {
@@ -102,13 +106,14 @@ body {
 
 .submit-username {
     font-size: 18px;
-    width: 60px;
+    width: 70px;
     height: 35px;
     line-height: 35px;
     margin: 5px auto;
     text-align: center;
     background-color: white;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .foot {
@@ -125,45 +130,42 @@ body {
 /*============================================*/
 
 .message-instance {
+    border-top: 1px ridge rgba(255, 255, 255, .1);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     min-height: 0px;
     max-height: 500px;
     width: 950px;
     margin: 0;
-    padding: 0 0 50px 0;
+    padding: 10px 0 25px 0;
 }
 
 .username {
-    // float: left;
-    line-height: 13px;
     display: inline-block;
     margin: 1% 0% 0% 1%;
     width: 18%;
-    text-align: right;
-    // min-height: 30px;
-    // background-color: green;
+    font-weight: bold;
+    text-align: left;
     color: #a6e22d;
 }
 
 .message-text {
-    // float: left;
-        // line-height: 13px;
     display: inline-block;
     margin: 1% 1% 0% 1%;
     width: 59%;
     max-height: 500px;
-    // max-width: 100px;
-    // height: 30px;
     text-align: right;
     overflow: scroll;
     text-align: left;
-    // background-color: green;
+    position: relative;
+    top: 4px;
     color: #fff;
     & img {
     }
 }
 
 .timestamp {
-    line-height: 13px;
+    // line-height: 13px;
     // float: right;
     display: inline-block;
     margin: 1% 1% 0% 0%;
@@ -174,32 +176,34 @@ body {
     // background-color: green;
 }
 
+.inputForm {
+    padding-top: 25px;
+    border-top: 1px solid white;
+}
+
 .textfield2 {
     text-align: left;
-    vertical-align: text-top;
     position: relative;
-    width: 400px;
-    // height: 50px;
+    // width: 400px;
+    width: 45%;
+    height: 50px;
 }
 
 .submit-message {
-    font-size: 18px;
-    width: 60px;
-    height: 35px;
-    line-height: 35px;
-    margin: 5px auto;
+    font-size: 44px;
+    font-weight: bold;
+    border-radius: 6px;
+    // width: 60px;
+    width: 50%;
+    height: 55px;
+    bottom: 12px;
+    line-height: 55px;
+    position: relative;
     text-align: center;
     background-color: white;
     cursor: pointer;
+    display: inline-block;
 }
-
-
-        // <div class="main">
-        //     <form class ="inputForm">
-        //         <input class="textfield2"></input>
-        //         <div class="submit-message">Submit</div>
-        //     </form>
-        // </div>
 
 /*============================================*/
 /* Before & After Example */
@@ -220,6 +224,7 @@ body {
         background-color: red;
         left: 200px;
     }
+
     &:after {
         position: absolute;
         content: " ";
@@ -232,6 +237,7 @@ body {
         top: 20px;
         transition: all .5s ease;
     }
+
     &:hover:after {
         top: 0px;
         left: 175px;

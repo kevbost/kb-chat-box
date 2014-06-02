@@ -33,19 +33,17 @@
 
 		<div class="identity">
 			<form>
-				<input class="input-username" placeholder="USERNAME"></input>
-				<div class="submit-username">Submit</div>
+				<input class="input-username" placeholder="WELCOME"></input>
+				<div class="submit-username">ENTER</div>
 			</form>
 		</div>
 
 		<div class="main">
 			<form class ="inputForm">
-				<textarea class="textfield2"></textarea>
+				<textarea class="textfield2" placeholder="Message text here.  Any raw HTML will load into the page as a new message after you click the submit button."></textarea>
 				<div class="submit-message">Submit</div>
 			</form>
 		</div>
-
-		<div id="scroll"></div>
 
 	</div>
 	
@@ -59,7 +57,7 @@
 						<li class="message-text">
 									<%=message %>
 						</li>
-						<li class="timestamp"><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
+						<li class="timestamp">Submitted on<br><%= moment(parseInt(time)).format('MMMM YYYY, h:mm a') %></li>
 		</ul>
 	</script>
 	<!-- build:js scripts/vendor.js -->
