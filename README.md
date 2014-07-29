@@ -6,5 +6,7 @@ This chatbox runs by pulling data from a relational database, where all of the I
 
 Its easy, just input a username and post a message. Maybe someone will be there to respond... who knows!
 
+[http://kevbost.github.io/kb-chat-box/](http://kevbost.github.io/kb-chat-box/)
+
 ##Assets:
 jQuery - Javascript - UnderscoreJS - Heroku - AJAX
