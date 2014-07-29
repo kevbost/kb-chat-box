@@ -1,7 +1,7 @@
 'use strict';
 
-var user = 'KB'
-$(".input-username").prop('disabled', true);
+var user;
+// $(".input-username").prop('disabled', true);
 
 
 // User Login
@@ -10,6 +10,7 @@ $('.submit-username').click(function(){
 	$('.identity, .main').addClass("activate");
 	// alert('Yo whatsup ' + user + '?');
 	$('.container').scrollTop($('.main')[0].scrollHeight);
+	console.log(user)
 });
 
 // sets momentJS default
@@ -33,13 +34,14 @@ function renderChat(data){
 		if(info.user && info.time && info.message) {
 		var rendered = chatBox(info);
 		_.last( rendered, [1])
-		$('.main').prepend(rendered);
+		$('.chatbox-area').prepend(rendered);
 	}});
 }
 
 // /////////////////////////////////////////// Message Constructor
 function Message(user, message, time) {
-	this.user = user || 'gh-pages';
+	console.log(user)
+	this.user = user;
 	this.message = message || 'A random user just submitted an empty message from his local chat client.';
 	this.time = time || 'Immediately.';
 	this.meta = 'very m374';
@@ -49,18 +51,27 @@ function Message(user, message, time) {
 // ///////////////////////////////////////////////// Post function
 function update(info) {
 		$.post('http://tiny-pizza-server.herokuapp.com/collections/chat-messages', info);
+		// console.log(info)
 }
+
+$('.textfield2').keypress(function(key) {
+	if (key.keyCode == '13') {
+		key.preventDefault();
+        
+        $('.submit-message').trigger('click');
+	}
+});
 
 // //////////////////////////////////// Click to run post function
 $('.submit-message').click(function(){
-	var user
-	var message = $('.textfield2').val();
+	var user = $('.input-username').val();
+	var message = 	$('.textfield2').val();
+					$('.textfield2').val('');
 	var time = now;
 	var postMessage = new Message(user, message, time);
 	update(postMessage);
-	alert("success");
+	var rendered = chatBox(postMessage);
+	$('.chatbox-area').append(rendered)
 });
 
 loadChat();
-
-// setInterval(loadChat,1000);
