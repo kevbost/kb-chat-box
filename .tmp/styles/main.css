@@ -10,7 +10,15 @@
 
 /*================*/
 
-/* line 9, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000039;
+  }
+}
 
 * {
   font-family: 'Oswald', sans-serif;
@@ -23,14 +31,30 @@
 
 /*============================================*/
 
-/* line 20, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000320;
+  }
+}
 
 body {
   background-color: #3d3d3d;
   height: 500px;
 }
 
-/* line 26, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000326;
+  }
+}
 
 .head {
   background-color: #fff;
@@ -40,7 +64,15 @@ body {
   margin-bottom: 40px;
 }
 
-/* line 35, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000335;
+  }
+}
 
 .title {
   margin: 0 auto;
@@ -52,7 +84,15 @@ body {
   font-size: 8em;
 }
 
-/* line 45, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000345;
+  }
+}
 
 .underTitle {
   margin: 0 auto;
@@ -65,7 +105,15 @@ body {
   letter-spacing: .54em;
 }
 
-/* line 56, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000356;
+  }
+}
 
 .container {
   border: 1px solid orange;
@@ -78,7 +126,15 @@ body {
   position: relative;
 }
 
-/* line 67, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000367;
+  }
+}
 
 .main {
   text-align: center;
@@ -93,13 +149,29 @@ body {
   display: none;
 }
 
-/* line 80, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000380;
+  }
+}
 
 .main.activate {
   display: block;
 }
 
-/* line 85, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000385;
+  }
+}
 
 .identity {
   margin: 0 auto;
@@ -111,13 +183,29 @@ body {
   top: 100px;
 }
 
-/* line 93, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000393;
+  }
+}
 
 .identity.activate {
   display: none;
 }
 
-/* line 98, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000398;
+  }
+}
 
 .input-username {
   position: relative;
@@ -128,7 +216,15 @@ body {
   text-align: center;
 }
 
-/* line 107, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003107;
+  }
+}
 
 .submit-username {
   font-size: 18px;
@@ -142,7 +238,15 @@ body {
   border-radius: 6px;
 }
 
-/* line 119, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003119;
+  }
+}
 
 .foot {
   display: block;
@@ -159,7 +263,15 @@ body {
 
 /*============================================*/
 
-/* line 132, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003132;
+  }
+}
 
 .message-instance {
   border-top: 1px ridge rgba(255, 255, 255, 0.1);
@@ -172,7 +284,15 @@ body {
   padding: 10px 0 25px 0;
 }
 
-/* line 143, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003143;
+  }
+}
 
 .username {
   display: inline-block;
@@ -183,7 +303,15 @@ body {
   color: #a6e22d;
 }
 
-/* line 152, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003152;
+  }
+}
 
 .message-text {
   display: inline-block;
@@ -198,7 +326,15 @@ body {
   color: #fff;
 }
 
-/* line 167, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003167;
+  }
+}
 
 .timestamp {
   display: inline-block;
@@ -208,14 +344,30 @@ body {
   text-align: right;
 }
 
-/* line 179, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003179;
+  }
+}
 
 .inputForm {
   padding-top: 25px;
   border-top: 1px solid white;
 }
 
-/* line 184, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003184;
+  }
+}
 
 .textfield2 {
   text-align: left;
@@ -224,7 +376,15 @@ body {
   height: 50px;
 }
 
-/* line 192, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003192;
+  }
+}
 
 .submit-message {
   font-size: 44px;
@@ -248,7 +408,15 @@ body {
 
 /*============================================*/
 
-/* line 213, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003213;
+  }
+}
 
 .example {
   position: relative;
@@ -257,7 +425,15 @@ body {
   background-color: orange;
 }
 
-/* line 218, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003218;
+  }
+}
 
 .example:before {
   position: absolute;
@@ -270,7 +446,15 @@ body {
   left: 200px;
 }
 
-/* line 229, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003229;
+  }
+}
 
 .example:after {
   position: absolute;
@@ -285,7 +469,15 @@ body {
   transition: all .5s ease;
 }
 
-/* line 242, ../../app/styles/main.scss */
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/KB\/Documents\/_-Projects\/2014\/05-May\/chat-box\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003242;
+  }
+}
 
 .example:hover:after {
   top: 0px;
